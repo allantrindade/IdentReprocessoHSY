@@ -1,0 +1,8 @@
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\ContadorDeDiasHSY.Principal.resources
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\ContadorDeDiasHSY.Properties.Resources.resources
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\ContadorDeDiasHSY.csproj.GenerateResource.Cache
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\bin\Debug\ContadorDeDiasHSY.exe.config
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\bin\Debug\ContadorDeDiasHSY.exe
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\bin\Debug\ContadorDeDiasHSY.pdb
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\ContadorDeDiasHSY.exe
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\ContadorDeDiasHSY.pdb
