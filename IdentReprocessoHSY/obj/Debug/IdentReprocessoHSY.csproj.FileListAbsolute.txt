@@ -6,11 +6,20 @@ D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorD
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\IdentReprocessoHSY.Principal.resources
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\IdentReprocessoHSY.exe
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\ContadorDeDiasHSY\ContadorDeDiasHSY\obj\Debug\IdentReprocessoHSY.pdb
-D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Idententificação de Reprocesso.exe.config
-D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Idententificação de Reprocesso.exe
-D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Idententificação de Reprocesso.pdb
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.exe.config
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.exe
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.pdb
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.Principal.resources
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.Properties.Resources.resources
 D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.csproj.GenerateResource.Cache
-D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Idententificação de Reprocesso.exe
-D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Idententificação de Reprocesso.pdb
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.exe
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.pdb
+D:\Users\Allan\Documents\Visual Studio 2012\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.csprojResolveAssemblyReference.cache
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.exe.config
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.exe
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.pdb
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.exe
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\bin\Debug\Identificação de Reprocesso.pdb
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.Principal.resources
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.Properties.Resources.resources
+D:\Users\Allan\Desktop\projetos\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.csproj.GenerateResource.Cache

@@ -78,6 +78,7 @@ namespace IdentReprocessoHSY
             this.boxDias1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boxDias1.MaxLength = 3;
             this.boxDias1.Name = "boxDias1";
+            this.boxDias1.ReadOnly = true;
             this.boxDias1.Size = new System.Drawing.Size(20, 23);
             this.boxDias1.TabIndex = 11;
             // 
@@ -88,8 +89,10 @@ namespace IdentReprocessoHSY
             this.boxInicio.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boxInicio.Mask = "          00/00/0000      00:00";
             this.boxInicio.Name = "boxInicio";
+            this.boxInicio.ReadOnly = true;
             this.boxInicio.Size = new System.Drawing.Size(184, 23);
             this.boxInicio.TabIndex = 8;
+            this.boxInicio.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.boxInicio_KeyPress);
             // 
             // boxValidade1
             // 
@@ -98,6 +101,7 @@ namespace IdentReprocessoHSY
             this.boxValidade1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boxValidade1.Mask = "00/00/0000";
             this.boxValidade1.Name = "boxValidade1";
+            this.boxValidade1.ReadOnly = true;
             this.boxValidade1.Size = new System.Drawing.Size(76, 23);
             this.boxValidade1.TabIndex = 10;
             this.boxValidade1.ValidatingType = typeof(System.DateTime);
@@ -132,6 +136,7 @@ namespace IdentReprocessoHSY
             this.boxLote.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxLote.Location = new System.Drawing.Point(257, 178);
             this.boxLote.Name = "boxLote";
+            this.boxLote.ReadOnly = true;
             this.boxLote.Size = new System.Drawing.Size(59, 23);
             this.boxLote.TabIndex = 6;
             // 
@@ -229,6 +234,7 @@ namespace IdentReprocessoHSY
             this.boxCobertura.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxCobertura.Location = new System.Drawing.Point(117, 149);
             this.boxCobertura.Name = "boxCobertura";
+            this.boxCobertura.ReadOnly = true;
             this.boxCobertura.Size = new System.Drawing.Size(59, 23);
             this.boxCobertura.TabIndex = 2;
             // 
@@ -249,6 +255,7 @@ namespace IdentReprocessoHSY
             this.boxAgregado.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxAgregado.Location = new System.Drawing.Point(257, 149);
             this.boxAgregado.Name = "boxAgregado";
+            this.boxAgregado.ReadOnly = true;
             this.boxAgregado.Size = new System.Drawing.Size(59, 23);
             this.boxAgregado.TabIndex = 3;
             // 
@@ -269,6 +276,7 @@ namespace IdentReprocessoHSY
             this.boxAroma.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxAroma.Location = new System.Drawing.Point(382, 149);
             this.boxAroma.Name = "boxAroma";
+            this.boxAroma.ReadOnly = true;
             this.boxAroma.Size = new System.Drawing.Size(59, 23);
             this.boxAroma.TabIndex = 4;
             // 
@@ -297,6 +305,7 @@ namespace IdentReprocessoHSY
             this.boxLinha.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxLinha.Location = new System.Drawing.Point(117, 178);
             this.boxLinha.Name = "boxLinha";
+            this.boxLinha.ReadOnly = true;
             this.boxLinha.Size = new System.Drawing.Size(59, 23);
             this.boxLinha.TabIndex = 5;
             // 
@@ -374,6 +383,7 @@ namespace IdentReprocessoHSY
             this.boxValidade2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boxValidade2.Mask = "00/00/0000";
             this.boxValidade2.Name = "boxValidade2";
+            this.boxValidade2.ReadOnly = true;
             this.boxValidade2.Size = new System.Drawing.Size(76, 23);
             this.boxValidade2.TabIndex = 12;
             this.boxValidade2.ValidatingType = typeof(System.DateTime);
@@ -385,11 +395,13 @@ namespace IdentReprocessoHSY
             this.boxDias2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.boxDias2.MaxLength = 3;
             this.boxDias2.Name = "boxDias2";
+            this.boxDias2.ReadOnly = true;
             this.boxDias2.Size = new System.Drawing.Size(20, 23);
             this.boxDias2.TabIndex = 13;
             // 
             // btnGerar
             // 
+            this.btnGerar.Enabled = false;
             this.btnGerar.Location = new System.Drawing.Point(190, 310);
             this.btnGerar.Name = "btnGerar";
             this.btnGerar.Size = new System.Drawing.Size(93, 28);
@@ -418,9 +430,9 @@ namespace IdentReprocessoHSY
             this.label13.Location = new System.Drawing.Point(373, 347);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(68, 13);
+            this.label13.Size = new System.Drawing.Size(74, 13);
             this.label13.TabIndex = 42;
-            this.label13.Text = "Versão 1.0  /  2019";
+            this.label13.Text = "Versão 1.0.3  /  2019";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // boxProduto
@@ -428,6 +440,7 @@ namespace IdentReprocessoHSY
             this.boxProduto.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boxProduto.Location = new System.Drawing.Point(257, 120);
             this.boxProduto.Name = "boxProduto";
+            this.boxProduto.ReadOnly = true;
             this.boxProduto.Size = new System.Drawing.Size(184, 23);
             this.boxProduto.TabIndex = 1;
             // 

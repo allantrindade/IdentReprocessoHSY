@@ -5,16 +5,22 @@
     <Setting Name="Impressora" Type="System.String" Scope="User">
       <Value Profile="(Default)">ZDesigner GC420t (EPL)</Value>
     </Setting>
-    <Setting Name="Valadade2" Type="System.Int32" Scope="User">
+    <Setting Name="Anob1" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2018</Value>
+    </Setting>
+    <Setting Name="Anob2" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">2019</Value>
+    </Setting>
+    <Setting Name="Validade2" Type="System.String" Scope="User">
       <Value Profile="(Default)">90</Value>
     </Setting>
-    <Setting Name="Valadade1" Type="System.Int32" Scope="User">
+    <Setting Name="Validade1" Type="System.String" Scope="User">
       <Value Profile="(Default)">28</Value>
     </Setting>
     <Setting Name="Copias" Type="System.Int16" Scope="User">
-      <Value Profile="(Default)">4</Value>
+      <Value Profile="(Default)">2</Value>
     </Setting>
-    <Setting Name="Teste" Type="System.Boolean" Scope="User">
+    <Setting Name="Adm" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>

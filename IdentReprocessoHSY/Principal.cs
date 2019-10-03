@@ -22,757 +22,45 @@ namespace IdentReprocessoHSY
         public void Lotear()
         {
             try
-            {               
+            {
                 int num = 0;
                 int dia = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Day);
                 int mes = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Month);
                 int ano = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Year);
+                int anob1 = Properties.Settings.Default.Anob1;
+                int anob2 = Properties.Settings.Default.Anob2;
                 string[] letra = new string[32] { "","A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", 
                                               "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "S" };
 
-                switch (mes)
-                {
-                    case 1:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 75;
-                                }
-                                else
-                                {
-                                    num = 76;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 2:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 77;
-                                }
-                                else
-                                {
-                                    num = 78;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 3:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 79;
-                                }
-                                else
-                                {
-                                    num = 80;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 4:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 81;
-                                }
-                                else
-                                {
-                                    num = 82;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 5:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 83;
-                                }
-                                else
-                                {
-                                    num = 84;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 6:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia<= 15)
-                                {
-                                    num = 85;
-                                }
-                                else
-                                {
-                                    num = 86;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 7:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 87;
-                                }
-                                else
-                                {
-                                    num = 88;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 8:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 89;
-                                }
-                                else
-                                {
-                                    num = 90;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 9:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 91;
-                                }
-                                else
-                                {
-                                    num = 92;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 10:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 93;
-                                }
-                                else
-                                {
-                                    num = 94;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 11:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 95;
-                                }
-                                else
-                                {
-                                    num = 96;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 12:
-                        switch (ano)
-                        {
-                            case 2016:
-                                if (dia <= 15)
-                                {
-                                    num = 97;
-                                }
-                                else
-                                {
-                                    num = 98;
-                                }
-                                break;
-                        }
-                        break;
-                }
-                switch (mes)
-                {
-                    case 1:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 11;
-                                }
-                                else
-                                {
-                                    num = 12;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 2:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 13;
-                                }
-                                else
-                                {
-                                    num = 14;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 3:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 15;
-                                }
-                                else
-                                {
-                                    num = 16;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 4:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 17;
-                                }
-                                else
-                                {
-                                    num = 18;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 5:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 19;
-                                }
-                                else
-                                {
-                                    num = 20;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 6:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 21;
-                                }
-                                else
-                                {
-                                    num = 22;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 7:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 23;
-                                }
-                                else
-                                {
-                                    num = 24;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 8:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 25;
-                                }
-                                else
-                                {
-                                    num = 26;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 9:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 27;
-                                }
-                                else
-                                {
-                                    num = 28;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 10:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 29;
-                                }
-                                else
-                                {
-                                    num = 30;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 11:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 31;
-                                }
-                                else
-                                {
-                                    num = 32;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 12:
-                        switch (ano)
-                        {
-                            case 2017:
-                                if (dia <= 15)
-                                {
-                                    num = 33;
-                                }
-                                else
-                                {
-                                    num = 34;
-                                }
-                                break;
-                        }
-                        break;
-                }
-                switch (mes)
-                {
-                    case 1:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 35;
-                                }
-                                else
-                                {
-                                    num = 36;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 2:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 37;
-                                }
-                                else
-                                {
-                                    num = 38;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 3:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 39;
-                                }
-                                else
-                                {
-                                    num = 40;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 4:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 41;
-                                }
-                                else
-                                {
-                                    num = 42;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 5:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 43;
-                                }
-                                else
-                                {
-                                    num = 44;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 6:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 45;
-                                }
-                                else
-                                {
-                                    num = 46;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 7:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 47;
-                                }
-                                else
-                                {
-                                    num = 48;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 8:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 49;
-                                }
-                                else
-                                {
-                                    num = 50;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 9:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 51;
-                                }
-                                else
-                                {
-                                    num = 52;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 10:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 53;
-                                }
-                                else
-                                {
-                                    num = 54;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 11:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 55;
-                                }
-                                else
-                                {
-                                    num = 56;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 12:
-                        switch (ano)
-                        {
-                            case 2018:
-                                if (dia <= 15)
-                                {
-                                    num = 57;
-                                }
-                                else
-                                {
-                                    num = 58;
-                                }
-                                break;
-                        }
-
-                        break;
-
-                }
-                switch (mes)
-                {
-                    case 1:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 59;
-                                }
-                                else
-                                {
-                                    num = 60;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 2:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 61;
-                                }
-                                else
-                                {
-                                    num = 62;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 3:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 63;
-                                }
-                                else
-                                {
-                                    num = 64;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 4:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 65;
-                                }
-                                else
-                                {
-                                    num = 66;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 5:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 67;
-                                }
-                                else
-                                {
-                                    num = 68;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 6:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 69;
-                                }
-                                else
-                                {
-                                    num = 70;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 7:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 71;
-                                }
-                                else
-                                {
-                                    num = 72;
-                                }
-                                break;
-                        }
-                        break;
-
-                    case 8:
-                        switch (ano)
-                        {
-                            case 2019:
-                                if (dia <= 15)
-                                {
-                                    num = 73;
-                                }
-                                else
-                                {
-                                    num = 74;
-                                }
-                                break;                     
-                        }
-                        break;
-                }
-
                 if (dia <= 15)
                 {
-                    boxLote.Text = num + letra[dia] + "28";
+                    num = (mes * 2) + (ano - anob1) + (55 + (ano - anob2) * 23);
+                    num = num + 1;
+                    boxLote.Text = num + letra[dia] + "28"; 
                 }
                 else
                 {
-                    boxLote.Text = num + letra[dia] + "28";
-                }
-
+                    num = (mes * 2) + (ano - anob1) + (55 + (ano - anob2) * 23);
+                    num = num + 2;
+                    boxLote.Text = num + letra[dia] + "28"; 
+                }                  
             }
             catch
             {
                 MessageBox.Show("Preencha Data e Hora de Início Corretamente!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
             }
         }
-
         public void Calcular()
         {
             try
-            {
+            {                             
                 boxValidade1.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias1.Text)).ToString();
-                boxValidade2.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias2.Text)).ToString();
+                boxValidade2.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias2.Text)).ToString();                
                 Lotear();
             }
             catch
             {
-                MessageBox.Show("Preencha Data, Hora de Início e Prazo de Validade Corretamente!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Preencha Data, e Hora de Início Corretamente!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -796,9 +84,29 @@ namespace IdentReprocessoHSY
         public void Preencher()
         {
             try
-            {
+            {            
+                boxCodigo.Text = boxCodigo.Text.TrimStart('0');
+
                 switch (boxCodigo.Text)
                 {
+
+                        //Admin
+
+                    case "5275":
+                        if (boxInicio.ReadOnly == true && btnGerar.Enabled == false)
+                        {
+                            boxInicio.ReadOnly = false;
+                            btnGerar.Enabled = true;
+                            boxCodigo.Text = "";
+                        }
+                        else
+                        {
+                            boxInicio.ReadOnly = true;
+                            btnGerar.Enabled = false;           
+                            boxCodigo.Text = "";                         
+                        }
+                        break;
+
                     //Vazio
                     case "":
                         Limpar();
@@ -814,7 +122,7 @@ namespace IdentReprocessoHSY
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 2";
                         boxDias1.Text = "28";
-                        boxDias2.Text = "90";
+                        boxDias2.Text = "90";                      
                         boxInicio.Text = DateTime.Now.ToString();
                         Calcular();
                         break;
@@ -914,8 +222,8 @@ namespace IdentReprocessoHSY
                     case "40016":
                         boxProduto.Text = "Barra Amendoim 85g";
                         boxCobertura.Text = "351056";
-                        boxAgregado.Text = "115249";
-                        boxAroma.Text = "115255";
+                        boxAgregado.Text = "115249 \n115255";
+                        boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 2";
                         boxDias1.Text = "28";
                         boxDias2.Text = "90";
@@ -924,7 +232,7 @@ namespace IdentReprocessoHSY
                         break;
 
                     //Barra Crunchers 85g
-                    case "40018":
+                    case "40038":
                         boxProduto.Text = "Barra Crunchers 85g";
                         boxCobertura.Text = "351056";
                         boxAgregado.Text = "110051";
@@ -939,9 +247,9 @@ namespace IdentReprocessoHSY
 
                     // PRODUTOS BINDLER 1 \\
                  
-                    //Barra Dark Tradicional 100g
+                    //Barra Dark Trad. 100g
                     case "88349":
-                        boxProduto.Text = "Barra Dark Tradicional 100g";
+                        boxProduto.Text = "Barra Dark Trad. 100g";
                         boxCobertura.Text = "302255";
                         boxAgregado.Text = "N/A";
                         boxAroma.Text = "N/A";
@@ -991,11 +299,11 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Aerado 100g
+                    //Barra Aerada 100g
                     case "88778":
-                        boxProduto.Text = "Barra Aerado 100g";
+                        boxProduto.Text = "Barra Aerada 100g";
                         boxCobertura.Text = "351056";
-                        boxAgregado.Text = "N/A";
+                        boxAgregado.Text = "115190";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -1004,11 +312,11 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Aerado 100g
+                    //Barra Aerada Exp. 100g
                     case "88812":
-                        boxProduto.Text = "Barra Aerado Exp. 100g";
+                        boxProduto.Text = "Barra Aerada Exp. 100g";
                         boxCobertura.Text = "302415";
-                        boxAgregado.Text = "N/A";
+                        boxAgregado.Text = "115190";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -1034,7 +342,7 @@ namespace IdentReprocessoHSY
                     case "88828":
                         boxProduto.Text = "Barra Dark Cranberry 100g";
                         boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115257";
+                        boxAgregado.Text = "115256";
                         boxAroma.Text = "115257";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -1082,9 +390,9 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Tradicional 20g
+                    //Barra Dark Trad. 20g
                     case "88919":
-                        boxProduto.Text = "Barra Dark Tradicional 20g";
+                        boxProduto.Text = "Barra Dark Trad. 20g";
                         boxCobertura.Text = "302255";
                         boxAgregado.Text = "N/A";
                         boxAroma.Text = "N/A";
@@ -1099,7 +407,7 @@ namespace IdentReprocessoHSY
                     case "88950":
                         boxProduto.Text = "Barra Dark Cranberry 20g";
                         boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115257";
+                        boxAgregado.Text = "115256";
                         boxAroma.Text = "115257";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -1122,6 +430,19 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Barra Dark Aerada 100g
+                    case "40018":
+                        boxProduto.Text = "Barra Dark Aerada 100g";
+                        boxCobertura.Text = "302255";
+                        boxAgregado.Text = "115190";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
                     //Barra Dark Café 100g
                     case "40028":
                         boxProduto.Text = "Barra Dark Café 100g";
@@ -1135,12 +456,12 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Caramelo 100g
-                    case "40048":
-                        boxProduto.Text = "Barra Dark Caramelo 100g";
+                    //Barra Dark Aerada 85g
+                    case "40041":
+                        boxProduto.Text = "Barra Dark Aerada 85g";
                         boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115282";
-                        boxAroma.Text = "115283";
+                        boxAgregado.Text = "115190";
+                        boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
                         boxDias2.Text = "90";
@@ -1148,8 +469,479 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Barra Aerada 85g
+                    case "40045":
+                        boxProduto.Text = "Barra Aerada 85g";
+                        boxCobertura.Text = "351056";
+                        boxAgregado.Text = "115190";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Barra Aerada Exp. 85g
+                    case "40046":
+                        boxProduto.Text = "Barra Aerada Exp. 85g";
+                        boxCobertura.Text = "302415";
+                        boxAgregado.Text = "115190";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Barra Dark Caramelo 100g
+                    case "40048":
+                        boxProduto.Text = "Barra Dark Caramelo 100g";
+                        boxCobertura.Text = "302255";
+                        boxAgregado.Text = "115283";
+                        boxAroma.Text = "115298";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Barra Duo Cookies 87g
+                    case "40113":
+                        boxProduto.Text = "Barra Duo Cookies 87g";
+                        boxCobertura.Text = "351056 \n305071";
+                        boxAgregado.Text = "115069";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+
+
+                    // PRODUTOS FLEX 2 \\
+
+
+
+                    //Cereal CNC 22g
+                    case "88621":
+                        boxProduto.Text = "Cereal CNC 22g";
+                        boxCobertura.Text = "302168";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal CNC 22g
+                    case "88966":
+                        boxProduto.Text = "Cereal CNC 22g";
+                        boxCobertura.Text = "302168";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal CNCHOC 22g
+                    case "88618":
+                        boxProduto.Text = "Cereal CNCHOC";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal CNCHOC
+                    case "88964":
+                        boxProduto.Text = "Cereal CNCHOC 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Morango 22g
+                    case "88627":
+                        boxProduto.Text = "Cereal Morango 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Morango
+                    case "88968":
+                        boxProduto.Text = "Cereal Morango 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Banana 22g
+                    case "88637":
+                        boxProduto.Text = "Cereal Banana 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Banana 22g
+                    case "88971":
+                        boxProduto.Text = "Cereal Banana 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Coco 22g
+                    case "88630":
+                        boxProduto.Text = "Cereal Coco 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Coco 22g
+                    case "88969":
+                        boxProduto.Text = "Cereal Coco 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Brigadeiro 22g
+                    case "88624":
+                        boxProduto.Text = "Cereal Brigadeiro 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Cereal Brigadeiro
+                    case "88967":
+                        boxProduto.Text = "Cereal Brigadeiro 22g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Go Paçoca 11g
+                    case "40026":
+                        boxProduto.Text = "Go Paçoca 11g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Go Paçoca 25g
+                    case "40020":
+                        boxProduto.Text = "Go Paçoca 25g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Go Paçoca 25g
+                    case "40023":
+                        boxProduto.Text = "Go Paçoca 25g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Go Brigadeiro 25g
+                    case "40022":
+                        boxProduto.Text = "Go Brigadeiro 25g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Go Brigadeiro 25g
+                    case "40024":
+                        boxProduto.Text = "Go Brigadeiro 25g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Crunchers Frut. Verm. 120g
+                    case "40029":
+                        boxProduto.Text = "Crunchers Frut. Verm. 120g";
+                        boxCobertura.Text = "302168";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Crunchers Amendoim 120g
+                    case "40030":
+                        boxProduto.Text = "Crunchers Amendoim 120g";
+                        boxCobertura.Text = "302313";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Flex 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "40";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+
+
+                        // Produtos Wafer 2 \\
+
+
+                    //Hersheys Mais ao Leite 115g
+                    case "88553":
+                        boxProduto.Text = "Hersheys Mais ao Leite 115g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hersheys Mais CNC 115g
+                    case "88554":
+                        boxProduto.Text = "Hersheys Mais CNC 115g";
+                        boxCobertura.Text = "302412";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hersheys Mais Amendoim 115g
+                    case "88923":
+                        boxProduto.Text = "Hsy Mais Amendoim 115g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hsy Mais Triplo Choc 115g
+                    case "40037":
+                        boxProduto.Text = "Hsy Mais Triplo Choc 115g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+
+                        // Produtos Wafer 1 \\
+
+                    //Hsy Mais Mini ao Leite
+                    case "88734":
+                        boxProduto.Text = "Hsy Mais Mini ao Leite";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hsy Mais Mini Cnc
+                    case "88735":
+                        boxProduto.Text = "Hsy Mais Mini ao Leite";
+                        boxCobertura.Text = "302412";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    // Produtos IoIo \\
+
+                    //Ioio Crem Choc
+                    case "88406":
+                        boxProduto.Text = "Ioio Crem Choc";
+                        boxCobertura.Text = "302276";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Crem Misto
+                    case "88407":
+                        boxProduto.Text = "Ioio Crem Misto";
+                        boxCobertura.Text = "302276 \n302277";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Choc
+                    case "88463":
+                        boxProduto.Text = "Ioio Mix Choc";
+                        boxCobertura.Text = "302276";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Misto
+                    case "88400":
+                        boxProduto.Text = "Ioio Mix Misto";
+                        boxCobertura.Text = "302276 \n302277";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Choc
+                    case "88462":
+                        boxProduto.Text = "Ioio Mix Choc";
+                        boxCobertura.Text = "302276";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Misto
+                    case "88397":
+                        boxProduto.Text = "Ioio Mix Misto";
+                        boxCobertura.Text = "302276 \n302277";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
                     default:
-                        MessageBox.Show("Produto não cadastrado!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Código não cadastrado!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         break;
                 }
             }
@@ -1169,19 +961,29 @@ namespace IdentReprocessoHSY
         {
             try
             {
-                String impressora = Properties.Settings.Default.Impressora;
-                Int16 copias = Convert.ToInt16(boxCopias.Text);
-                Boolean teste = Properties.Settings.Default.Teste;
-                                               
-                if (teste == true)
+                if (String.IsNullOrEmpty(Convert.ToString(boxProduto.Text)))
                 {
-                    printPreviewDialog1.ShowDialog();
+                    MessageBox.Show("Preencha todos os campos corretamente!", "Erro!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 else
                 {
-                    printDocument1.PrinterSettings.PrinterName = impressora;
-                    printDocument1.PrinterSettings.Copies = copias;
-                    printDocument1.Print();
+                    String impressora = Properties.Settings.Default.Impressora;
+                    Int16 copias = Convert.ToInt16(boxCopias.Text);
+                  //  Boolean adm = Properties.Settings.Default.adm;
+
+                  //  if (adm == true)
+                   // {                      
+                   //     printPreviewDialog1.ShowDialog();
+                   // }
+                   // else
+                   // {
+                        if (MessageBox.Show("Deseja imprimir " + copias + " etiqueta(s) ?", "Identificação de Reprocesso", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
+                        {
+                            printDocument1.PrinterSettings.PrinterName = impressora;
+                            printDocument1.PrinterSettings.Copies = copias;                           
+                            printDocument1.Print();
+                        }
+                    //}
                 }
             }
             catch (Exception erro)
@@ -1249,6 +1051,7 @@ namespace IdentReprocessoHSY
                 Font letrapunder = new Font("Calibri", 14, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Pixel);
                 Font letrapbb = new Font("Calibri", 16, FontStyle.Regular, GraphicsUnit.Pixel);
                 Font letradata = new Font("Calibri", 17, FontStyle.Bold, GraphicsUnit.Pixel);
+                Font letrapamed = new Font("Calibri", 20, FontStyle.Regular, GraphicsUnit.Pixel);
                 StringFormat alinhamento = new StringFormat();
                 alinhamento.Alignment = StringAlignment.Center;
 
@@ -1258,22 +1061,31 @@ namespace IdentReprocessoHSY
                 e.Graphics.DrawString("Descrição do Reprocesso", letrapbb, Brushes.Black, 105, 50, alinhamento);
                 e.Graphics.DrawString(boxProduto.Text.ToUpper(), letra, Brushes.Black, 185, 75, alinhamento);
                 e.Graphics.DrawString("Cobertura", letrapbb, Brushes.Black, 70, 118, alinhamento);
-                e.Graphics.DrawString(boxCobertura.Text.ToUpper(), letras, Brushes.Black, 72, 150, alinhamento);
-                e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 185, 118, alinhamento);
-                e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letras, Brushes.Black, 185, 150, alinhamento);
-                if (boxCodigo.Text == "40016")
+
+                if (boxCodigo.Text == "88407" | boxCodigo.Text == "88400" | boxCodigo.Text == "88397" | boxCodigo.Text == "40113")
                 {
-                    e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 300, 118, alinhamento);
+                    e.Graphics.DrawString(boxCobertura.Text.ToUpper(), letrapamed, Brushes.Black, 72, 137, alinhamento);
                 }
                 else
                 {
-                    e.Graphics.DrawString("Aroma", letrapbb, Brushes.Black, 300, 118, alinhamento);
+                    e.Graphics.DrawString(boxCobertura.Text.ToUpper(), letras, Brushes.Black, 72, 150, alinhamento);
                 }
+                e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 185, 118, alinhamento);
+
+                if (boxCodigo.Text == "40016")
+                {
+                    e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letrapamed, Brushes.Black, 185, 137, alinhamento);
+                }
+                else
+                {
+                e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letras, Brushes.Black, 185, 150, alinhamento);
+                }
+                e.Graphics.DrawString("Aroma", letrapbb, Brushes.Black, 300, 118, alinhamento);           
                 e.Graphics.DrawString(boxAroma.Text.ToUpper(), letras, Brushes.Black, 297, 150, alinhamento);
                 e.Graphics.DrawString("Linha", letrapbb, Brushes.Black, 70, 186, alinhamento);
                 e.Graphics.DrawString(boxLinha.Text.ToUpper(), letras, Brushes.Black, 72, 218, alinhamento);
                 e.Graphics.DrawString("Lote", letrapbb, Brushes.Black, 185, 186, alinhamento);
-                e.Graphics.DrawString(boxLote.Text.ToUpper(), letras, Brushes.Black, 185, 218, alinhamento);
+                e.Graphics.DrawString(boxLote.Text.ToUpper(), letra, Brushes.Black, 185, 217, alinhamento);
                 e.Graphics.DrawString("Peso", letrapbb, Brushes.Black, 300, 186, alinhamento);
                 if (boxPeso.Text == "")
                 {
@@ -1342,8 +1154,22 @@ namespace IdentReprocessoHSY
         private void Principal_Load(object sender, EventArgs e)
         {           
             boxCopias.Text = Properties.Settings.Default.Copias.ToString();
-            boxDias1.Text = Properties.Settings.Default.Valadade1.ToString();
-            boxDias2.Text = Properties.Settings.Default.Valadade2.ToString();
+            boxDias1.Text = Properties.Settings.Default.Validade1.ToString();
+            boxDias2.Text = Properties.Settings.Default.Validade2.ToString();
+
+            if (Properties.Settings.Default.Adm == true)
+            {
+                btnGerar.Enabled = true;
+                boxInicio.ReadOnly = false;
+            }
+          }
+
+        private void boxInicio_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13 && boxInicio.ReadOnly == false)
+            {
+                Calcular();
+            }
+        }
         }
     }
-}

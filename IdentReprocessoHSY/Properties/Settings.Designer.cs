@@ -37,31 +37,55 @@ namespace IdentReprocessoHSY.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("90")]
-        public int Valadade2 {
+        [global::System.Configuration.DefaultSettingValueAttribute("2018")]
+        public int Anob1 {
             get {
-                return ((int)(this["Valadade2"]));
+                return ((int)(this["Anob1"]));
             }
             set {
-                this["Valadade2"] = value;
+                this["Anob1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("2019")]
+        public int Anob2 {
+            get {
+                return ((int)(this["Anob2"]));
+            }
+            set {
+                this["Anob2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("90")]
+        public string Validade2 {
+            get {
+                return ((string)(this["Validade2"]));
+            }
+            set {
+                this["Validade2"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("28")]
-        public int Valadade1 {
+        public string Validade1 {
             get {
-                return ((int)(this["Valadade1"]));
+                return ((string)(this["Validade1"]));
             }
             set {
-                this["Valadade1"] = value;
+                this["Validade1"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("4")]
+        [global::System.Configuration.DefaultSettingValueAttribute("2")]
         public short Copias {
             get {
                 return ((short)(this["Copias"]));
@@ -74,12 +98,12 @@ namespace IdentReprocessoHSY.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool Teste {
+        public bool Adm {
             get {
-                return ((bool)(this["Teste"]));
+                return ((bool)(this["Adm"]));
             }
             set {
-                this["Teste"] = value;
+                this["Adm"] = value;
             }
         }
     }
