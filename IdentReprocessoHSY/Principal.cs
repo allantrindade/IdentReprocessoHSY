@@ -107,6 +107,38 @@ namespace IdentReprocessoHSY
                         }
                         break;
 
+                    case "7578":
+                        if (boxInicio.ReadOnly == true && btnGerar.Enabled == false)
+                        {
+                            boxInicio.ReadOnly = false;
+                            btnGerar.Enabled = true;
+                            boxCodigo.Text = "";
+                            boxProduto.ReadOnly = false;
+                            boxCobertura.ReadOnly = false;
+                            boxAgregado.ReadOnly = false;
+                            boxAroma.ReadOnly = false;
+                            boxLinha.ReadOnly = false;
+                            boxLote.ReadOnly = false;
+                            boxDias1.ReadOnly = false;
+                            boxDias2.ReadOnly = false;
+                            
+                        }
+                        else
+                        {
+                            boxInicio.ReadOnly = true;
+                            btnGerar.Enabled = false;
+                            boxCodigo.Text = "";
+                            boxProduto.ReadOnly = true;
+                            boxCobertura.ReadOnly = true;
+                            boxAgregado.ReadOnly = true;
+                            boxAroma.ReadOnly = true;
+                            boxLinha.ReadOnly = true;
+                            boxLote.ReadOnly = true;
+                            boxDias1.ReadOnly = true;
+                            boxDias2.ReadOnly = true;
+                        }
+                        break;
+
                     //Vazio
                     case "":
                         Limpar();
@@ -244,13 +276,26 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                         //Barra Cristal 87g
+                    case "40115":
+                        boxProduto.Text = "Barra Cristal 87g";
+                        boxCobertura.Text = "302130";
+                        boxAgregado.Text = "115308";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
 
                     // PRODUTOS BINDLER 1 \\
                  
-                    //Barra Dark Trad. 100g
-                    case "88349":
-                        boxProduto.Text = "Barra Dark Trad. 100g";
-                        boxCobertura.Text = "302255";
+                    //Barra Dark Trad. 85g
+                    case "40091":
+                        boxProduto.Text = "Barra Dark Trad. 85g";
+                        boxCobertura.Text = "302445";
                         boxAgregado.Text = "N/A";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
@@ -260,10 +305,10 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Menta 100g
-                    case "88352":
-                        boxProduto.Text = "Barra Dark Menta 100g";
-                        boxCobertura.Text = "302255";
+                    //Barra Dark Menta 85g
+                    case "40093":
+                        boxProduto.Text = "Barra Dark Menta 85g";
+                        boxCobertura.Text = "302445";
                         boxAgregado.Text = "N/A";
                         boxAroma.Text = "115196";
                         boxLinha.Text = "Bindler 1";
@@ -325,11 +370,11 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Laranja 100g
-                    case "88826":
-                        boxProduto.Text = "Barra Dark Laranja 100g";
-                        boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115171";
+                    //Barra Dark Laranja 85g
+                    case "40095":
+                        boxProduto.Text = "Barra Dark Laranja 85g";
+                        boxCobertura.Text = "302445";
+                        boxAgregado.Text = "115301";
                         boxAroma.Text = "115258";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -338,11 +383,11 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Cranberry 100g
-                    case "88828":
-                        boxProduto.Text = "Barra Dark Cranberry 100g";
-                        boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115256";
+                    //Barra Dark Cranberry 85g
+                    case "40097":
+                        boxProduto.Text = "Barra Dark Cranberry 85g";
+                        boxCobertura.Text = "302445";
+                        boxAgregado.Text = "115302";
                         boxAroma.Text = "115257";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
@@ -443,12 +488,12 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Café 100g
-                    case "40028":
-                        boxProduto.Text = "Barra Dark Café 100g";
-                        boxCobertura.Text = "302255";
-                        boxAgregado.Text = "115290";
-                        boxAroma.Text = "115291";
+                    //Barra Dark Café 85g
+                    case "40099":
+                        boxProduto.Text = "Barra Dark Café 85g";
+                        boxCobertura.Text = "302445";
+                        boxAgregado.Text = "115290 \n115309";
+                        boxAroma.Text = "115316";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
                         boxDias2.Text = "90";
@@ -459,7 +504,7 @@ namespace IdentReprocessoHSY
                     //Barra Dark Aerada 85g
                     case "40041":
                         boxProduto.Text = "Barra Dark Aerada 85g";
-                        boxCobertura.Text = "302255";
+                        boxCobertura.Text = "302445";
                         boxAgregado.Text = "115190";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
@@ -472,7 +517,7 @@ namespace IdentReprocessoHSY
                     //Barra Aerada 85g
                     case "40045":
                         boxProduto.Text = "Barra Aerada 85g";
-                        boxCobertura.Text = "351056";
+                        boxCobertura.Text = "302461";
                         boxAgregado.Text = "115190";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
@@ -485,7 +530,7 @@ namespace IdentReprocessoHSY
                     //Barra Aerada Exp. 85g
                     case "40046":
                         boxProduto.Text = "Barra Aerada Exp. 85g";
-                        boxCobertura.Text = "302415";
+                        boxCobertura.Text = "302466";
                         boxAgregado.Text = "115190";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
@@ -495,12 +540,12 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Dark Caramelo 100g
-                    case "40048":
-                        boxProduto.Text = "Barra Dark Caramelo 100g";
-                        boxCobertura.Text = "302255";
+                    //Barra Dark Caramelo 85g
+                    case "40101":
+                        boxProduto.Text = "Barra Dark Caramelo 85g";
+                        boxCobertura.Text = "302445";
                         boxAgregado.Text = "115283";
-                        boxAroma.Text = "115298";
+                        boxAroma.Text = "115315";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
                         boxDias2.Text = "90";
@@ -831,6 +876,58 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Hersheys Mais ao Leite 102g
+                    case "40067":
+                        boxProduto.Text = "Hersheys Mais ao Leite 102g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hersheys Mais CNC 115g
+                    case "40068":
+                        boxProduto.Text = "Hersheys Mais CNC 102g";
+                        boxCobertura.Text = "302412";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hersheys Mais Amendoim 102g
+                    case "40069":
+                        boxProduto.Text = "Hsy Mais Amendoim 102g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Hsy Mais Triplo Choc 102g
+                    case "40070":
+                        boxProduto.Text = "Hsy Mais Triplo Choc 102g";
+                        boxCobertura.Text = "302411";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
 
                         // Produtos Wafer 1 \\
 
@@ -1062,7 +1159,7 @@ namespace IdentReprocessoHSY
                 e.Graphics.DrawString(boxProduto.Text.ToUpper(), letra, Brushes.Black, 185, 75, alinhamento);
                 e.Graphics.DrawString("Cobertura", letrapbb, Brushes.Black, 70, 118, alinhamento);
 
-                if (boxCodigo.Text == "88407" | boxCodigo.Text == "88400" | boxCodigo.Text == "88397" | boxCodigo.Text == "40113")
+                if (boxProduto.Text == "Ioio Crem Misto" | boxProduto.Text == "Ioio Mix Misto" | boxProduto.Text == "Ioio Mix Misto" | boxProduto.Text == "Barra Duo Cookies 87g")
                 {
                     e.Graphics.DrawString(boxCobertura.Text.ToUpper(), letrapamed, Brushes.Black, 72, 137, alinhamento);
                 }
@@ -1072,7 +1169,7 @@ namespace IdentReprocessoHSY
                 }
                 e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 185, 118, alinhamento);
 
-                if (boxCodigo.Text == "40016")
+                if (boxProduto.Text == "Barra Amendoim 85g" | boxProduto.Text == "Barra Dark Café 85g")
                 {
                     e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letrapamed, Brushes.Black, 185, 137, alinhamento);
                 }
@@ -1080,6 +1177,7 @@ namespace IdentReprocessoHSY
                 {
                 e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letras, Brushes.Black, 185, 150, alinhamento);
                 }
+                
                 e.Graphics.DrawString("Aroma", letrapbb, Brushes.Black, 300, 118, alinhamento);           
                 e.Graphics.DrawString(boxAroma.Text.ToUpper(), letras, Brushes.Black, 297, 150, alinhamento);
                 e.Graphics.DrawString("Linha", letrapbb, Brushes.Black, 70, 186, alinhamento);
