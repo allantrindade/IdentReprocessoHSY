@@ -27,20 +27,18 @@ namespace IdentReprocessoHSY
                 int dia = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Day);
                 int mes = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Month);
                 int ano = Convert.ToInt16(DateTime.Parse(boxInicio.Text).Year);
-                int anob1 = Properties.Settings.Default.Anob1;
-                int anob2 = Properties.Settings.Default.Anob2;
                 string[] letra = new string[32] { "","A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", 
                                               "A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "S" };
 
                 if (dia <= 15)
                 {
-                    num = (mes * 2) + (ano - anob1) + (55 + (ano - anob2) * 23);
+                    num = (mes * 2) + (ano - 2020) + 15 + (ano - 2021) * 23;
                     num = num + 1;
                     boxLote.Text = num + letra[dia] + "28"; 
                 }
                 else
                 {
-                    num = (mes * 2) + (ano - anob1) + (55 + (ano - anob2) * 23);
+                    num = (mes * 2) + (ano - 2020) + 15 + (ano - 2021) * 23;
                     num = num + 2;
                     boxLote.Text = num + letra[dia] + "28"; 
                 }                  
@@ -88,10 +86,7 @@ namespace IdentReprocessoHSY
                 boxCodigo.Text = boxCodigo.Text.TrimStart('0');
 
                 switch (boxCodigo.Text)
-                {
-
-                        //Admin
-
+                {                   
                     case "5275":
                         if (boxInicio.ReadOnly == true && btnGerar.Enabled == false)
                         {
@@ -107,6 +102,7 @@ namespace IdentReprocessoHSY
                         }
                         break;
 
+                    //ADMIN
                     case "7578":
                         if (boxInicio.ReadOnly == true && btnGerar.Enabled == false)
                         {
@@ -558,6 +554,19 @@ namespace IdentReprocessoHSY
                         boxProduto.Text = "Barra Duo Cookies 87g";
                         boxCobertura.Text = "351056 \n305071";
                         boxAgregado.Text = "115069";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Bindler 1";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Barra Dark 73% 85g
+                    case "40166":
+                        boxProduto.Text = "Barra Dark 73% 85g";
+                        boxCobertura.Text = "302434";
+                        boxAgregado.Text = "115290";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 1";
                         boxDias1.Text = "28";
