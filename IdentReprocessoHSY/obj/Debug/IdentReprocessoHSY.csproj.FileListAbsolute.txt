@@ -27,3 +27,4 @@ D:\Users\Allan\Documents\Visual Studio 2017\Projects\IdentReprocessoHSY\IdentRep
 D:\Users\Allan\Documents\Visual Studio 2017\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.csproj.CopyComplete
 D:\Users\Allan\Documents\Visual Studio 2017\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.exe
 D:\Users\Allan\Documents\Visual Studio 2017\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\Identificação de Reprocesso.pdb
+D:\Users\Allan\Documents\Visual Studio 2017\Projects\IdentReprocessoHSY\IdentReprocessoHSY\obj\Debug\IdentReprocessoHSY.csprojAssemblyReference.cache

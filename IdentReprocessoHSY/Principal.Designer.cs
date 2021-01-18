@@ -422,7 +422,7 @@ namespace IdentReprocessoHSY
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label13.Size = new System.Drawing.Size(72, 13);
             this.label13.TabIndex = 42;
-            this.label13.Text = "Versão 1.05  /  2020";
+            this.label13.Text = "Versão 1.06  /  2021";
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // boxProduto

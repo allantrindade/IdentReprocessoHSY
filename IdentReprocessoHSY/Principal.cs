@@ -224,7 +224,7 @@ namespace IdentReprocessoHSY
                     case "40012":
                         boxProduto.Text = "Barra Ovomaltine 87g";
                         boxCobertura.Text = "351056";
-                        boxAgregado.Text = "115287";
+                        boxAgregado.Text = "115179";
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 2";
                         boxDias1.Text = "28";
@@ -259,9 +259,9 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                    //Barra Crunchers 85g
+                    //Barra Crocante 85g
                     case "40038":
-                        boxProduto.Text = "Barra Crunchers 85g";
+                        boxProduto.Text = "Barra Crocante 85g";
                         boxCobertura.Text = "351056";
                         boxAgregado.Text = "110051";
                         boxAroma.Text = "N/A";
@@ -285,9 +285,21 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Barra Pink Lemonade 92g
+                    case "40175":
+                        boxProduto.Text = "Barra Pink Lemonade 92g";
+                        boxCobertura.Text = "305071";
+                        boxAgregado.Text = "115308 \n110062";
+                        boxAroma.Text = "115326";
+                        boxLinha.Text = "Bindler 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "90";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
 
                     // PRODUTOS BINDLER 1 \\
-                 
+
                     //Barra Dark Trad. 85g
                     case "40091":
                         boxProduto.Text = "Barra Dark Trad. 85g";
@@ -1077,7 +1089,7 @@ namespace IdentReprocessoHSY
                     Int16 copias = Convert.ToInt16(boxCopias.Text);
                   //  Boolean adm = Properties.Settings.Default.adm;
 
-                  //  if (adm == true)
+                   // if (adm == true)
                    // {                      
                    //     printPreviewDialog1.ShowDialog();
                    // }
@@ -1178,8 +1190,8 @@ namespace IdentReprocessoHSY
                 }
                 e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 185, 118, alinhamento);
 
-                if (boxProduto.Text == "Barra Amendoim 85g" | boxProduto.Text == "Barra Dark Café 85g")
-                {
+                if (boxProduto.Text == "Barra Amendoim 85g" | boxProduto.Text == "Barra Dark Café 85g" | boxProduto.Text == "Barra Pink Lemonade 92g")
+                { 
                     e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letrapamed, Brushes.Black, 185, 137, alinhamento);
                 }
                 else
