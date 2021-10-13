@@ -33,6 +33,6 @@ using System.Resources;
 // É possível especificar todos os valores ou usar o padrão de números da Compilação e de Revisão 
 // utilizando o '*' como mostrado abaixo:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.0.6")]
-[assembly: AssemblyFileVersion("1.0.6")]
+[assembly: AssemblyVersion("1.0.7")]
+[assembly: AssemblyFileVersion("1.0.7")]
 [assembly: NeutralResourcesLanguageAttribute("pt-BR")]

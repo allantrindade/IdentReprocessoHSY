@@ -12,13 +12,13 @@ using System.Windows.Forms;
 namespace IdentReprocessoHSY
 {
     public partial class Principal : Form
-    {    
+    {
         public Principal()
         {
             InitializeComponent();
 
         }
-   
+
         public void Lotear()
         {
             try
@@ -34,14 +34,14 @@ namespace IdentReprocessoHSY
                 {
                     num = (mes * 2) + (ano - 2020) + 15 + (ano - 2021) * 23;
                     num = num + 1;
-                    boxLote.Text = num + letra[dia] + "28"; 
+                    boxLote.Text = num + letra[dia] + "28";
                 }
                 else
                 {
                     num = (mes * 2) + (ano - 2020) + 15 + (ano - 2021) * 23;
                     num = num + 2;
-                    boxLote.Text = num + letra[dia] + "28"; 
-                }                  
+                    boxLote.Text = num + letra[dia] + "28";
+                }
             }
             catch
             {
@@ -51,9 +51,9 @@ namespace IdentReprocessoHSY
         public void Calcular()
         {
             try
-            {                             
+            {
                 boxValidade1.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias1.Text)).ToString();
-                boxValidade2.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias2.Text)).ToString();                
+                boxValidade2.Text = DateTime.Parse(boxInicio.Text).AddDays(Convert.ToInt32(boxDias2.Text)).ToString();
                 Lotear();
             }
             catch
@@ -82,11 +82,11 @@ namespace IdentReprocessoHSY
         public void Preencher()
         {
             try
-            {            
+            {
                 boxCodigo.Text = boxCodigo.Text.TrimStart('0');
 
                 switch (boxCodigo.Text)
-                {                   
+                {
                     case "5275":
                         if (boxInicio.ReadOnly == true && btnGerar.Enabled == false)
                         {
@@ -97,8 +97,8 @@ namespace IdentReprocessoHSY
                         else
                         {
                             boxInicio.ReadOnly = true;
-                            btnGerar.Enabled = false;           
-                            boxCodigo.Text = "";                         
+                            btnGerar.Enabled = false;
+                            boxCodigo.Text = "";
                         }
                         break;
 
@@ -117,7 +117,7 @@ namespace IdentReprocessoHSY
                             boxLote.ReadOnly = false;
                             boxDias1.ReadOnly = false;
                             boxDias2.ReadOnly = false;
-                            
+
                         }
                         else
                         {
@@ -140,7 +140,7 @@ namespace IdentReprocessoHSY
                         Limpar();
                         break;
 
-                        // PRODUTOS BINDLER 2 \\
+                    // PRODUTOS BINDLER 2 \\
 
                     //Barra Ao Leite Exp. 92g
                     case "40001":
@@ -150,12 +150,12 @@ namespace IdentReprocessoHSY
                         boxAroma.Text = "N/A";
                         boxLinha.Text = "Bindler 2";
                         boxDias1.Text = "28";
-                        boxDias2.Text = "90";                      
+                        boxDias2.Text = "90";
                         boxInicio.Text = DateTime.Now.ToString();
                         Calcular();
                         break;
 
-                        //Barra Ao Leite 92g
+                    //Barra Ao Leite 92g
                     case "40002":
                         boxProduto.Text = "Barra ao Leite 92g";
                         boxCobertura.Text = "351056";
@@ -168,7 +168,7 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                        //Barra Branco 92g
+                    //Barra Branco 92g
                     case "40004":
                         boxProduto.Text = "Barra Branco 92g";
                         boxCobertura.Text = "305071";
@@ -181,7 +181,7 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                        //Barra Extra Cremosa 92g
+                    //Barra Extra Cremosa 92g
                     case "40006":
                         boxProduto.Text = "Barra Extra Cremosa 92g";
                         boxCobertura.Text = "302279";
@@ -194,7 +194,7 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                        //Barra Meio Amargo 92g
+                    //Barra Meio Amargo 92g
                     case "40008":
                         boxProduto.Text = "Barra Meio Amargo 92g";
                         boxCobertura.Text = "302130";
@@ -206,7 +206,7 @@ namespace IdentReprocessoHSY
                         boxInicio.Text = DateTime.Now.ToString();
                         Calcular();
                         break;
-                       
+
                     //Barra CNC 87g
                     case "40010":
                         boxProduto.Text = "Barra CNC 87g";
@@ -272,7 +272,7 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                         //Barra Cristal 87g
+                    //Barra Cristal 87g
                     case "40115":
                         boxProduto.Text = "Barra Cristal 87g";
                         boxCobertura.Text = "302130";
@@ -430,7 +430,7 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
-                        //Barra Ovomaltine 20g
+                    //Barra Ovomaltine 20g
                     case "88877":
                         boxProduto.Text = "Barra Ovomaltine 20g";
                         boxCobertura.Text = "351056";
@@ -842,7 +842,7 @@ namespace IdentReprocessoHSY
 
 
 
-                        // Produtos Wafer 2 \\
+                    // Produtos Wafer 2 \\
 
 
                     //Hersheys Mais ao Leite 115g
@@ -950,7 +950,7 @@ namespace IdentReprocessoHSY
                         break;
 
 
-                        // Produtos Wafer 1 \\
+                    // Produtos Wafer 1 \\
 
                     //Hsy Mais Mini ao Leite
                     case "88734":
@@ -1087,18 +1087,18 @@ namespace IdentReprocessoHSY
                 {
                     String impressora = Properties.Settings.Default.Impressora;
                     Int16 copias = Convert.ToInt16(boxCopias.Text);
-                  //  Boolean adm = Properties.Settings.Default.adm;
+                    //Boolean adm = true;
 
-                   // if (adm == true)
-                   // {                      
+                    //if (adm == true)
+                    //{
                    //     printPreviewDialog1.ShowDialog();
                    // }
-                   // else
-                   // {
+                    //else
+                    //{
                         if (MessageBox.Show("Deseja imprimir " + copias + " etiqueta(s) ?", "Identificação de Reprocesso", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
                         {
                             printDocument1.PrinterSettings.PrinterName = impressora;
-                            printDocument1.PrinterSettings.Copies = copias;                           
+                            printDocument1.PrinterSettings.Copies = copias;
                             printDocument1.Print();
                         }
                     //}
@@ -1122,7 +1122,7 @@ namespace IdentReprocessoHSY
 
                 // Tamanho e Posição dos Retângulos.
                 Rectangle[] rect = {
-          new Rectangle(15, 5, 340, 528), //Descrição
+          new Rectangle(15, 5, 340, 560), //Descrição
           new Rectangle(15, 43, 340, 72), //Produto
           new Rectangle(15, 115, 113, 25),  //Desc. Cobertura 
           new Rectangle(128, 115, 113, 25),  //Desc. Agregado 
@@ -1145,14 +1145,14 @@ namespace IdentReprocessoHSY
           new Rectangle(128, 396, 113, 30), //Data 1
           new Rectangle(241, 396, 113, 30), //Data 2
           new Rectangle(15, 464, 340, 34), //Resultado Análise
-          new Rectangle(15, 500, 43, 32), //Após
-          new Rectangle(58, 500, 96, 32), //Vencimento
-          new Rectangle(154, 500, 200, 32), //Ultimo 
-          //new Rectangle(15, 533, 220, 32), //Obs 
-                               };
+          new Rectangle(15, 500, 340, 32), //Obs 
+          new Rectangle(15, 534, 43, 32), //Após
+          new Rectangle(58, 534, 96, 32), //Vencimento
+          new Rectangle(154, 534, 200, 32), //Não Uitlizar esse reprocesso    
+         };
 
                 //Criar os Retângulos
-                for (int i = 0; i <= 25; i++)
+                for (int i = 0; i <= 26; i++)
                 {
                     if (i == 19)
                     {
@@ -1176,7 +1176,7 @@ namespace IdentReprocessoHSY
 
 
                 e.Graphics.DrawString("IDENTIFICAÇÃO DE REPROCESSO", letra, Brushes.Black, 185, 12, alinhamento);
-                e.Graphics.DrawString("Descrição do Reprocesso", letrapbb, Brushes.Black, 105, 50, alinhamento);
+                e.Graphics.DrawString("Descrição do Reprocesso" + " - " + boxCodigo.Text, letrapbb, Brushes.Black, 126, 50, alinhamento);
                 e.Graphics.DrawString(boxProduto.Text.ToUpper(), letra, Brushes.Black, 185, 75, alinhamento);
                 e.Graphics.DrawString("Cobertura", letrapbb, Brushes.Black, 70, 118, alinhamento);
 
@@ -1191,15 +1191,15 @@ namespace IdentReprocessoHSY
                 e.Graphics.DrawString("Agregado", letrapbb, Brushes.Black, 185, 118, alinhamento);
 
                 if (boxProduto.Text == "Barra Amendoim 85g" | boxProduto.Text == "Barra Dark Café 85g" | boxProduto.Text == "Barra Pink Lemonade 92g")
-                { 
+                {
                     e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letrapamed, Brushes.Black, 185, 137, alinhamento);
                 }
                 else
                 {
-                e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letras, Brushes.Black, 185, 150, alinhamento);
+                    e.Graphics.DrawString(boxAgregado.Text.ToUpper(), letras, Brushes.Black, 185, 150, alinhamento);
                 }
-                
-                e.Graphics.DrawString("Aroma", letrapbb, Brushes.Black, 300, 118, alinhamento);           
+
+                e.Graphics.DrawString("Aroma", letrapbb, Brushes.Black, 300, 118, alinhamento);
                 e.Graphics.DrawString(boxAroma.Text.ToUpper(), letras, Brushes.Black, 297, 150, alinhamento);
                 e.Graphics.DrawString("Linha", letrapbb, Brushes.Black, 70, 186, alinhamento);
                 e.Graphics.DrawString(boxLinha.Text.ToUpper(), letras, Brushes.Black, 72, 218, alinhamento);
@@ -1234,9 +1234,10 @@ namespace IdentReprocessoHSY
                 e.Graphics.DrawString(boxValidade2.Text, letradata, Brushes.Black, 300, 401, alinhamento);
                 e.Graphics.DrawString("Antes do consumo avisar o facilitador ou gestor para \navaliação", letrapb, Brushes.Black, 180, 428, alinhamento);
                 e.Graphics.DrawString("Resultado da análise sensorial:  (   )OK  /  (   )Não OK", letrapppp, Brushes.Black, 185, 474, alinhamento);
-                e.Graphics.DrawString("Após", letrapppp, Brushes.Black, 37, 509, alinhamento);
-                e.Graphics.DrawString(boxValidade2.Text, letradata, Brushes.Black, 107, 507, alinhamento);
-                e.Graphics.DrawString("NÃO UTILIZAR ESTE REPROCESSO.", letrapunder, Brushes.Black, 254, 509, alinhamento);
+                e.Graphics.DrawString("Obs.:", letrapppp, Brushes.Black, 37, 509, alinhamento);
+                e.Graphics.DrawString("Após", letrapppp, Brushes.Black, 37, 542, alinhamento);
+                e.Graphics.DrawString(boxValidade2.Text, letradata, Brushes.Black, 107, 540, alinhamento);
+                e.Graphics.DrawString("NÃO UTILIZAR ESTE REPROCESSO.", letrapunder, Brushes.Black, 254, 542, alinhamento);
             }
             catch (Exception erro)
             {
@@ -1271,7 +1272,7 @@ namespace IdentReprocessoHSY
 
 
         private void Principal_Load(object sender, EventArgs e)
-        {           
+        {
             boxCopias.Text = Properties.Settings.Default.Copias.ToString();
             boxDias1.Text = Properties.Settings.Default.Validade1.ToString();
             boxDias2.Text = Properties.Settings.Default.Validade2.ToString();
@@ -1281,7 +1282,7 @@ namespace IdentReprocessoHSY
                 btnGerar.Enabled = true;
                 boxInicio.ReadOnly = false;
             }
-          }
+        }
 
         private void boxInicio_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -1290,5 +1291,6 @@ namespace IdentReprocessoHSY
                 Calcular();
             }
         }
-        }
+
     }
+}
