@@ -949,6 +949,19 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Hsy Mais Morango 102g
+                    case "40212":
+                        boxProduto.Text = "Hsy Mais Morango 102g";
+                        boxCobertura.Text = "302412";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "Wafer 2";
+                        boxDias1.Text = "28";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
 
                     // Produtos Wafer 1 \\
 
@@ -1019,8 +1032,34 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Ioio Mix Choc
+                    case "440261":
+                        boxProduto.Text = "Ioio Mix Choc";
+                        boxCobertura.Text = "302276";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
                     //Ioio Mix Misto
                     case "88400":
+                        boxProduto.Text = "Ioio Mix Misto";
+                        boxCobertura.Text = "302276 \n302277";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Misto
+                    case "440260":
                         boxProduto.Text = "Ioio Mix Misto";
                         boxCobertura.Text = "302276 \n302277";
                         boxAgregado.Text = "N/A";
@@ -1045,8 +1084,34 @@ namespace IdentReprocessoHSY
                         Calcular();
                         break;
 
+                    //Ioio Mix Choc
+                    case "440246":
+                        boxProduto.Text = "Ioio Mix Choc";
+                        boxCobertura.Text = "302276";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
                     //Ioio Mix Misto
                     case "88397":
+                        boxProduto.Text = "Ioio Mix Misto";
+                        boxCobertura.Text = "302276 \n302277";
+                        boxAgregado.Text = "N/A";
+                        boxAroma.Text = "N/A";
+                        boxLinha.Text = "IoIo";
+                        boxDias1.Text = "30";
+                        boxDias2.Text = "60";
+                        boxInicio.Text = DateTime.Now.ToString();
+                        Calcular();
+                        break;
+
+                    //Ioio Mix Misto
+                    case "440245":
                         boxProduto.Text = "Ioio Mix Misto";
                         boxCobertura.Text = "302276 \n302277";
                         boxAgregado.Text = "N/A";
